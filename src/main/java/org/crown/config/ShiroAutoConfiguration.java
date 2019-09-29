@@ -67,6 +67,7 @@ public class ShiroAutoConfiguration {
         filterMap.put("/swagger-resources/**", "anon");
         filterMap.put("/", "anon");
         filterMap.put("/**", "jwt");
+        filterMap.put("/actuator/prometheus","anon");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
         return shiroFilter;
     }
