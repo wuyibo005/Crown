@@ -172,15 +172,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <dependency>
+      <!--  <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
-        <!---通过此插件直接写数据到Influx DB-->
+        &lt;!&ndash;-通过此插件直接写数据到Influx DB&ndash;&gt;
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-influx</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

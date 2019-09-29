@@ -62,29 +62,29 @@ spring:
   aop:
     auto: true
     proxy-target-class: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,env,metrics,prometheus
-  metrics:
-    tags:
-      application: ${spring.application.name}
-    export:
-      influx:
-        enabled: true
-        db: coursemetrics
-        uri: http://localhost:8086
-        user-name: admin
-        password: admin
-        connect-timeout: 1s
-        read-timeout: 10s
-        auto-create-db: true
-        step: 1m
-        num-threads: 2
-        consistency: one
-        compressed: true
-        batch-size: 10000
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,env,metrics,prometheus
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#    export:
+#      influx:
+#        enabled: true
+#        db: coursemetrics
+#        uri: http://localhost:8086
+#        user-name: admin
+#        password: admin
+#        connect-timeout: 1s
+#        read-timeout: 10s
+#        auto-create-db: true
+#        step: 1m
+#        num-threads: 2
+#        consistency: one
+#        compressed: true
+#        batch-size: 10000
         ## 地址 uri: http://localhost:8086
         ## InFluxDB 用户 user-name: admin （是不是需要配置具有管理角色的用户未测试）
         ## InFluxDB 密码 password: admin
