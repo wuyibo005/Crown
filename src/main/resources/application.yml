@@ -16,6 +16,8 @@ server:
   servlet:
     context-path: /
 spring:
+  profiles:
+    active: master
   application:
     name: prometheus
   jackson:
