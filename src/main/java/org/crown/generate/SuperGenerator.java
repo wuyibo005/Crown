@@ -163,7 +163,7 @@ public class SuperGenerator {
                         return super.processTypeConvert(globalConfig, fieldType);
                     }
                 })
-                .setDriverName("com.mysql.cj.jdbc.Driver")
+                .setDriverName("com.mysql.jdbc.Driver")
                 .setUsername("root")
                 .setPassword("123456")
                 .setUrl("jdbc:mysql://192.168.20.174:3306/crown?characterEncoding=utf8");
