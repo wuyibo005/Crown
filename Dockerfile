@@ -2,7 +2,7 @@ FROM ccr.ccs.tencentyun.com/moto/openjdk-tini-arthas-ttf:v22
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 RUN mkdir /logs && \
 chmod +x /docker-entrypoint.sh
-COPY ./target/Crown.jar app.jar
+COPY ./target/crown.jar app.jar
 CMD ["/docker-entrypoint.sh"]
 
 #FROM ccr.ccs.tencentyun.com/dcc-java/alpine-oraclejdk8:slim
