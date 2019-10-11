@@ -1,4 +1,4 @@
-FROM ccr.ccs.tencentyun.com/dcc-java/openjdk-tini-arthas-ttf:v22
+FROM ccr.ccs.tencentyun.com/moto/openjdk-tini-arthas-ttf:v22
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 RUN mkdir /logs && \
 chmod +x /docker-entrypoint.sh
